@@ -1,0 +1,74 @@
+
+.analytics-container {
+  padding: 2rem;
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-card {
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.analytics-header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.analytics-header h2 { margin: 0; font-size: 1.25rem; }
+.analytics-header p { color: var(--primary); margin: 5px 0 0; font-weight: 600; }
+
+.main-stat {
+  text-align: center;
+  padding: 1.5rem;
+  background: #eff6ff;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.main-stat .count { display: block; font-size: 2.5rem; font-weight: 800; color: var(--primary); }
+.main-stat .label { color: #64748b; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; }
+
+.analytics-section h3 { font-size: 1rem; margin-bottom: 1rem; color: var(--text); }
+
+.browser-row { margin-bottom: 1rem; }
+.browser-info { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 4px; }
+
+.progress-bar { height: 8px; background: #f1f5f9; border-radius: 4px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--primary); border-radius: 4px; }
+
+.device-split {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.device-box {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.device-val { display: block; font-weight: bold; font-size: 1.1rem; }
+.device-label { font-size: 0.8rem; color: #64748b; }
+
+.back-btn {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 10px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  color: #64748b;
+}

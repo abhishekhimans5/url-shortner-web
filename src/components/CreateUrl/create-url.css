@@ -1,0 +1,95 @@
+:root {
+  --primary: #2563eb;
+  --bg-subtle: #f8fafc;
+  --text-dark: #1e293b;
+  --border-color: #e2e8f0;
+}
+
+.create-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.create-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 550px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.create-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.input-group input {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.input-group input, .create-select {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.submit-btn {
+  background: var(--primary);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: opacity 0.2s;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .input-row { flex-direction: column; }
+}
