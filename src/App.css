@@ -1,0 +1,23 @@
+:root {
+  --bg-app: #f4f7f6;
+  --bg-card: #ffffff;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border: #d1d5db;
+  --shadow: rgba(0, 0, 0, 0.05);
+  --success: #22c55e;
+  --white: #ffffff;
+  --bg: #f8fafc;
+  --text: #1e293b;
+
+  /* 
+
+  
+
+  
+  --border: #e2e8f0;
+
+  */
+}
