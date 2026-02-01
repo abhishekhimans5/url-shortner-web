@@ -8,10 +8,8 @@ export const registerUser = async (name, email, password) => {
       email,
       password
     });
-    console.log("Register response:", response);
     return response.data;
   } catch (error) {
-    console.error("Error registering user:", error);
     throw error;
   }
 };

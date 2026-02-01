@@ -28,7 +28,7 @@ const Navbar = () => {
             onClick={() => setShowDropdown(!showDropdown)}
           >
             <div className="nav-avatar">
-              {user?.name?.charAt(0) || 'U'}
+              {user?.name?.charAt(0).toUpperCase() || 'U'}
             </div>
           </div>
 
@@ -40,7 +40,13 @@ const Navbar = () => {
               </div>
               <hr />
                 <Link to="/profile" className="dropdown-link">Profile</Link>
-              <button className="logout-btn">Log Out</button>
+              <button className="logout-btn"
+                onClick={() => {
+                  localStorage.removeItem('token');
+                  setIsLoggedIn(false);
+                  setUser(null);
+                }}
+              >Log Out</button>
             </div>
           )}
         </div>) : 

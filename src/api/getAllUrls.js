@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const getAllUrls = async (token) => {
   try {
-    const response = await axios.get(`${process.env.REACT_APP_API_URL}url/getAllUrls`, {
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}url/all`, {
       headers: {
         Authorization: `Bearer ${token}`
       }

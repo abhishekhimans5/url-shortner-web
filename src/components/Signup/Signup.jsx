@@ -43,7 +43,6 @@ const Signup = () => {
           setIsLoading(true);
           try {
             const response = await registerUser(formData.name, formData.email, formData.password);
-            console.log("Registration successful:", response);
             alert(response.data)
             setIsLoading(false);
           } catch (error) {

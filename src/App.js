@@ -22,7 +22,6 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   useEffect(() => {
     const token = localStorage.getItem('token');
-    console.log("Token from localStorage:", token);
     if(token) {
       const result = getUserDetails(token);
       result.then((result) => {
@@ -53,7 +52,7 @@ function App() {
             <Routes>
                     <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
                     <Route path="/create-link" element={<ProtectedRoute><CreateUrl /></ProtectedRoute>} />
-                    <Route path="/analytics" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
+                    <Route path="/analytics/:id" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
                     <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Signup />} />

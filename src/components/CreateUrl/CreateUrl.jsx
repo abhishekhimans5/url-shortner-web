@@ -25,9 +25,7 @@ const CreateUrl = () => {
     setIsLoading(true);
     try {
       const result = await createUrl(urlData);
-      console.log(JSON.stringify(result));
     } catch (error) {
-      console.log(error)
       setApiError(error.message);
     }
     setIsLoading(false)
@@ -39,6 +37,15 @@ const CreateUrl = () => {
       <div className="create-card">
         <h2 className="create-title">Shorten a New URL</h2>
         <form className="create-form" onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label>Name</label>
+            <input 
+              type="text" 
+              name="urlName" 
+              placeholder="Short It"  
+              onChange={handleChange}
+            />
+          </div>
           <div className="input-group">
             <label>Destination URL</label>
             <input 
